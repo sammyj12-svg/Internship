@@ -158,3 +158,105 @@
     color: #f5f5f5;
     font-family: "Lato", sans-serif;
 }
+/* ===========================
+   HOMEPAGE / HERO SECTION
+=========================== */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    /* Background photograph */
+    background-image: url("portbackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Dark navy overlay */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(12, 17, 35, 0.70);
+    z-index: 0;
+}
+
+/* Content positioning */
+.hero-container {
+    position: relative;
+    z-index: 1;
+    padding: 60px 8%;
+}
+
+/* Introduction text */
+.hero-text {
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.hero-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Your portrait */
+.hero-image img {
+    width: 100%;
+    max-width: 430px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 250px;
+}
+
+/* Contact button */
+#button {
+    display: inline-block;
+    background-color: #39465f;
+    color: white;
+    padding: 14px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#button:hover {
+    background-color: #526483;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+    .hero {
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .hero-text h2 {
+        font-size: 25px;
+    }
+
+    .hero-image {
+        margin-top: 35px;
+    }
+
+    .hero-image img {
+        height: 400px;
+        max-width: 300px;
+    }
+}
