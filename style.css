@@ -245,8 +245,11 @@
     .hero {
         text-align: center;
         padding: 50px 0;
+        background-size: auto 100%;
+        background-position: center;
+        background-repeat: no-repeat;
     }
-
+}
     .hero-text h1,
     .hero-text h2 {
         text-align: center;
