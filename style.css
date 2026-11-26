@@ -178,7 +178,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(12, 17, 35, 0.70);
+    background: rgba(12, 17, 35, 0.50);
     z-index: 0;
 }
 
